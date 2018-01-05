@@ -1,0 +1,125 @@
+/*** Layout ***/
+
+html, body {
+	height: 100%;
+	overflow: inherit;
+}
+
+body { min-width: 640px; }
+
+#wrapper { min-height: 100%; }
+
+#wrapper-clear {
+	height: 28px;
+	clear: both;
+}
+
+#header {
+	height: 110px;
+	border-bottom: 2px solid #000000;
+}
+
+#header img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#header h1 {
+	margin-left: 115px;
+	padding-top: 15px;
+	line-height: 40px;
+	font-size: 28px;
+}
+
+#nav {
+	height: 36px;
+	border-bottom: 2px solid #000000;
+}
+
+#nav ul {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+	line-height: 36px;
+}
+
+#nav a {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+#user {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 10px;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 16px;
+	max-width: 960px;
+	clear: both;
+}
+
+#content > :last-child { margin-bottom: 0; }
+
+#footer {
+	margin-top: -27px;
+	border-top: 2px solid #000000;
+	padding: 5px;
+	height: 15px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#login {
+	margin: 30px auto;
+	line-height: 30px;
+}
+
+#login th {
+	padding-right: 5px;
+	text-align: left;
+}
+
+#login td { text-align: right; }
+
+#login td.center { text-align: center; }
+
+/*** Styles ***/
+
+#header {
+	background: #660000;
+	color: #FFFFFF;
+}
+
+#nav, #footer, #nav a {
+	background: #CCCCFF;
+}
+
+#nav a {
+	color: #000080;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav a:hover, #nav a:active {
+	background: #FFFFFF;
+}
+
+#user {
+	border-radius: 0 0 0 6px;
+	-moz-border-radius: 0 0 0 6px;
+	-webkit-border-radius: 0 0 0 6px;
+	background: #FFFFFF;
+}

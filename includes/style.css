@@ -1,0 +1,196 @@
+/*** Block elements ***/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, canvas, embed {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font: 13px/16px "Lucida Grande", Verdana, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, blockquote, table, form, fieldset,
+textarea, canvas, object, embed, hr { margin-bottom: 1em; }
+
+h1 { font-size: 200%; }
+h2 { font-size: 175%; }
+h3 { font-size: 150%; }
+h4 { font-size: 125%; }
+h5 { font-size: 110%; }
+h6 { font-size: 100%; }
+
+blockquote {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+ul, ol { margin-left: 0.5em; }
+
+ul { list-style: disc; }
+ul ul { list-style: circle; }
+ul ul ul { list-style: square; }
+ul ul ul ul { list-style: disc; }
+
+ol { list-style: decimal; }
+ol ol { list-style: upper-alpha; }
+ol ol ol { list-style: upper-roman; }
+ol ol ol ol { list-style: lower-alpha; }
+ol ol ol ol ol { list-style: lower-roman; }
+ol ol ol ol ol ol { list-style: decimal; }
+
+ul ul, ol ol { margin-bottom: 0; }
+
+li, dd { margin-left: 1em; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table, th, td, fieldset { border: 1px solid #606060; }
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	border-width: 1px 0 0 1px;
+}
+
+th, td {
+	border-width: 0 1px 1px 0;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+th > :last-child, td > :last-child, form > :last-child,
+fieldset > :last-child { margin-bottom: 0; }
+
+fieldset { padding: 0.5em; }
+
+legend {
+	margin: 0 0.5em;
+	padding: 0 0.5em 0.5em;
+	font-size: 120%;
+}
+
+img {
+	display: block;
+	image-rendering: optimizeQuality;
+	-ms-interpolation-mode: bicubic;
+}
+
+table, img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*** Inline elements ***/
+
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:visited { color: #000080; }
+a:hover, a:active { color: #FF0000; }
+
+b, strong, h1, h2, h3, h4, h5, h6, th, legend, dt { font-weight: bold; }
+
+i, em, var, q, cite, dfn, caption, address { font-style: italic; }
+
+u, ins, a:hover, a:active, h3, h4, legend { text-decoration: underline; }
+
+s, strike, del { text-decoration: line-through; }
+
+tt, code, kbd, samp, pre, textarea {
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 100%;
+}
+
+sup, sub {
+	height: 0;
+	position: relative;
+	font-size: 80%;
+	line-height: 1;
+}
+sup { bottom: 1ex; }
+sub { top: 0.5ex; }
+
+big { font-size: 120%; }
+
+small { font-size: 75%; }
+
+abbr, acronym { border-bottom: 1px dotted #000000; }
+
+/*** Generic classes ***/
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+.block { display: block; }
+.inline { display: inline; }
+
+.top { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+
+.success { color: #008000; }
+.error { color: #FF0000; }
+.alert { color: #000080; }
+
+p.success, p.error, p.alert { padding: 0.5em; }
+
+p.success {
+	border: 1px solid #008000;
+	background: #DDFFDD;
+	color: #006000;
+}
+
+p.error {
+	border: 1px solid #FF0000;
+	background: #FFDDDD;
+	color: #600000;
+}
+
+p.alert {
+	border: 1px solid #000080;
+	background: #DDDDFF;
+	color: #000060;
+}
+
+table.left {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+table.no-border, table.no-border th, table.no-border td { border-width: 0; }
+
+table.no-border th, table.no-border td { vertical-align: top; }
+
+.wide {
+	margin-bottom: 1em;
+	max-width: 960px;
+	overflow-x: auto;
+}
+
+.aside {
+	margin: 0 0 1em 1em;
+	width: 300px;
+	padding: 10px;
+	float: right;
+	background: #DDDDDD;
+}
+
+.no-bottom, .wide > :last-child, .aside > :last-child { margin-bottom: 0; }
